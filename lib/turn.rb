@@ -1,5 +1,5 @@
 def display_board(array, index, value)
-
+array[index] = value
 
 
 #position_taken
