@@ -29,5 +29,5 @@ def valid_move?(board, index)
     end
 end
 #move
-def move(board, index, value = X)
+def move(board, index, value = "X")
 end
