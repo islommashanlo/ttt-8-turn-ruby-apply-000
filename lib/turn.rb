@@ -40,3 +40,4 @@ def turn(board)
   index = input_to_index
   if valid_move?(board, index) == true
     then move(board, index)
+    display_board(board)
