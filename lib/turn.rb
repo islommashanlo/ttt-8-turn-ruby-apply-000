@@ -8,9 +8,9 @@ def display_board(board)
 end
 #converted_input
 def input_to_index(user_input)
-  index = "#{user_input}".to_i
-  index -= 1
-  return index
+  converted_input = "#{user_input}".to_i
+  converted_input -= 1
+  return converted_input
 end
 #position_taken
 def position_taken?(board, index)
