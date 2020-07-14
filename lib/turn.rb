@@ -1,4 +1,5 @@
 board = [" ", " ", " "," ", " ", " "," ", " ", " "]
+#display_board
 def display_board(board)
   puts " #{board[0]} | #{board[1]} | #{board[2]} "
   puts "-----------"
@@ -6,12 +7,13 @@ def display_board(board)
   puts "-----------"
   puts " #{board[6]} | #{board[7]} | #{board[8]} "
 end
+#converted_input
 def input_to_index(user_input)
   converted_input = "#{user_input}".to_i
   converted_input -= 1
   return converted_input
 end
-
+#move
 def move(board, index, value = "X")
   array[index] = value
   return array
@@ -24,6 +26,7 @@ def position_taken?(board, index)
       then return true
     end
   end
+#valid_move
 def valid_move?(board, index)
     if position_taken?(board, index) == false and index.between?(0,8)
       then true
