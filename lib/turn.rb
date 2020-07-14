@@ -8,9 +8,9 @@ def display_board(board)
 end
 #converted_input
 def input_to_index(user_input)
-  converted_input = "#{user_input}".to_i
-  converted_input -= 1
-  return converted_input
+  index = "#{user_input}".to_i
+  index -= 1
+  return index
 end
 #position_taken
 def position_taken?(board, index)
@@ -30,4 +30,5 @@ def valid_move?(board, index)
 end
 #move
 def move(board, index, value = "X")
+
 end
