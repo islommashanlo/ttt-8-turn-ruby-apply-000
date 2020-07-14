@@ -17,10 +17,17 @@ def move(board, index, value = "X")
   return array
 end
 #position_taken
-  def position_taken?(board, index)
+def position_taken?(board, index)
     if board[index] == " " or board[index] == "" or board[index] == nil
       then return false
     elsif board[index] == "X" or board[index] == "O"
       then return true
     end
   end
+def valid_move?(board, index)
+    if position_taken?(board, index) == false and index.between?(0,8)
+      then true
+    else
+      false
+    end
+end
