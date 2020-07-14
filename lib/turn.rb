@@ -36,3 +36,4 @@ end
 #turn
 def turn(board)
   puts "Please enter 1-9 to make your move"
+  user_input = gets.strip
