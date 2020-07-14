@@ -31,4 +31,3 @@ end
 #move
 def move(board, index, value)
 end
-  
